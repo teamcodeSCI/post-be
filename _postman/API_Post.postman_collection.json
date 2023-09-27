@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "2133ddb2-6a5a-44dc-8e8a-7a2adf1a40fa",
+		"name": "API_Post",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18193777"
+	},
+	"item": [
+		{
+			"name": "post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://10.196.60.95/project/post-be/public/api/post",
+					"protocol": "http",
+					"host": [
+						"10",
+						"196",
+						"60",
+						"95"
+					],
+					"path": [
+						"project",
+						"post-be",
+						"public",
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-info-client",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://10.196.60.95/project/post-be/public/api/post/get-info-client?url=test",
+					"protocol": "http",
+					"host": [
+						"10",
+						"196",
+						"60",
+						"95"
+					],
+					"path": [
+						"project",
+						"post-be",
+						"public",
+						"api",
+						"post",
+						"get-info-client"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Test\",\"url\":\"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.196.60.95/project/post-be/public/api/post/create",
+					"protocol": "http",
+					"host": [
+						"10",
+						"196",
+						"60",
+						"95"
+					],
+					"path": [
+						"project",
+						"post-be",
+						"public",
+						"api",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.196.60.95/project/post-be/public/api/post/1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"196",
+						"60",
+						"95"
+					],
+					"path": [
+						"project",
+						"post-be",
+						"public",
+						"api",
+						"post",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
